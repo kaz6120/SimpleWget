@@ -1,0 +1,4 @@
+SimpleWget is a Cocoa front end for GNU Wget.
+
+* Platform: Mac OS X 10.5 or later
+* Language: Objective-C

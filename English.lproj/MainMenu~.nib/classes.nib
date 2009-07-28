@@ -1,0 +1,52 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                chooseDir = id; 
+                download = id; 
+                endPrefsWindow = id; 
+                goweb = id; 
+                mailto = id; 
+                prefsChanged = id; 
+                raisePrefsWindow = id; 
+                readList = id; 
+                revert = id; 
+                stopWget = id; 
+                testSound = id; 
+            }; 
+            CLASS = SimpleWget; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "_cache" = id; 
+                "_continue" = id; 
+                "_no_clobber" = id; 
+                "_no_directory" = id; 
+                "_no_host_dir" = id; 
+                "_only" = id; 
+                "_page" = id; 
+                "_recursive" = id; 
+                "_spanhosts" = id; 
+                "_timeout" = id; 
+                "_try" = id; 
+                "_wait_sec" = id; 
+                "_wgetlog" = id; 
+                downloadButton = id; 
+                downloadDir = id; 
+                downloadList = id; 
+                filetype = id; 
+                finishSound = id; 
+                level = id; 
+                prefsWindow = id; 
+                progressbar = id; 
+                statusField = id; 
+                stopButton = id; 
+                url = id; 
+                window = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = progressbar; LANGUAGE = ObjC; SUPERCLASS = NSProgressIndicator; }
+    ); 
+    IBVersion = 1; 
+}

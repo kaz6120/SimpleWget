@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXApplicationTarget section */
+		29B97326FDCFA39411CA2CEA /* SimpleWget */ = {
+			isa = PBXApplicationTarget;
+			buildConfigurationList = 5F3323E6085C185300F3B2B4 /* Build configuration list for PBXApplicationTarget "SimpleWget" */;
+			buildPhases = (
+				29B97327FDCFA39411CA2CEA /* Headers */,
+				29B97328FDCFA39411CA2CEA /* Resources */,
+				29B9732BFDCFA39411CA2CEA /* Sources */,
+				29B9732DFDCFA39411CA2CEA /* Frameworks */,
+			);
+			dependencies = (
+			);
+			name = SimpleWget;
+			productName = wgetWrapper;
+			productReference = 17587328FF379C6511CA2CBB /* SimpleWget.app */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundle</key>
+	<string></string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>SimpleWget</string>
+	<key>CFBundleHelpBookFolder</key>
+	<string>Help</string>
+	<key>CFBundleHelpBookName</key>
+	<string>SimpeWgetHelp</string>
+	<key>CFBundleIconFile</key>
+	<string>swicon.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.jamlog.simplewget</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>0.8.2</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+</dict>
+</plist>
+";
+		};
+/* End PBXApplicationTarget section */
+
+/* Begin PBXBuildFile section */
+		080E96DCFE201CFB7F000001 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		089C165EFE840E0CC02AAC07 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		1058C7A3FEA54F0111CA2CBB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		ECF05E900FA76A6D0049A8B5 /* SimpleWget.h in Headers */ = {isa = PBXBuildFile; fileRef = F50658E302C3705601A80002 /* SimpleWget.h */; };
+		ECF05E920FA76A6D0049A8B5 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		ECF05E930FA76A6D0049A8B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		ECF05E940FA76A6D0049A8B5 /* swicon.icns in Resources */ = {isa = PBXBuildFile; fileRef = F5AB439F03025F1A01DEF3BB /* swicon.icns */; };
+		ECF05E950FA76A6D0049A8B5 /* Sound.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F58CD2320392684901A80002 /* Sound.tiff */; };
+		ECF05E960FA76A6D0049A8B5 /* Help in Resources */ = {isa = PBXBuildFile; fileRef = F5D7F0480394BF9201A80002 /* Help */; };
+		ECF05E970FA76A6D0049A8B5 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = F5D7F04B0394BFA901A80002 /* index.html */; };
+		ECF05E980FA76A6D0049A8B5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5884549039D0E0901FEBAF7 /* Localizable.strings */; };
+		ECF05E990FA76A6D0049A8B5 /* wget in Resources */ = {isa = PBXBuildFile; fileRef = F559366A02C3735101A80002 /* wget */; };
+		ECF05E9B0FA76A6D0049A8B5 /* SimpleWget.m in Sources */ = {isa = PBXBuildFile; fileRef = F50658E202C3705601A80002 /* SimpleWget.m */; };
+		ECF05E9C0FA76A6D0049A8B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F50658E602C370C501A80002 /* main.m */; };
+		ECF05E9E0FA76A6D0049A8B5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		F50658E402C3705601A80002 /* SimpleWget.m in Sources */ = {isa = PBXBuildFile; fileRef = F50658E202C3705601A80002 /* SimpleWget.m */; };
+		F50658E502C3705601A80002 /* SimpleWget.h in Headers */ = {isa = PBXBuildFile; fileRef = F50658E302C3705601A80002 /* SimpleWget.h */; };
+		F50658E702C370C501A80002 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F50658E602C370C501A80002 /* main.m */; };
+		F588454B039D0E0901FEBAF7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5884549039D0E0901FEBAF7 /* Localizable.strings */; };
+		F58CD23403926F6B01A80002 /* Sound.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F58CD2320392684901A80002 /* Sound.tiff */; };
+		F5AB43A003025F1A01DEF3BB /* swicon.icns in Resources */ = {isa = PBXBuildFile; fileRef = F5AB439F03025F1A01DEF3BB /* swicon.icns */; };
+		F5D7F04A0394BF9201A80002 /* Help in Resources */ = {isa = PBXBuildFile; fileRef = F5D7F0480394BF9201A80002 /* Help */; };
+		F5D7F04C0394BFA901A80002 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = F5D7F04B0394BFA901A80002 /* index.html */; };
+		F5EF813303AB0B0501A80002 /* wget in Resources */ = {isa = PBXBuildFile; fileRef = F559366A02C3735101A80002 /* wget */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		17587328FF379C6511CA2CBB /* SimpleWget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = SimpleWget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		ECF05EA30FA76A6D0049A8B5 /* Info-SimpleWget__Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-SimpleWget__Upgraded_.plist"; sourceTree = "<group>"; };
+		ECF05EA40FA76A6D0049A8B5 /* SimpleWget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleWget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50658E202C3705601A80002 /* SimpleWget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleWget.m; sourceTree = "<group>"; };
+		F50658E302C3705601A80002 /* SimpleWget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleWget.h; sourceTree = "<group>"; };
+		F50658E602C370C501A80002 /* main.m */ = {isa = PBXFileReference; fileEncoding = 3; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F53E7BCE02C4911D01A80002 /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 3; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
+		F559366A02C3735101A80002 /* wget */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = wget; sourceTree = "<group>"; };
+		F563CBE0039D056301FD05B7 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Japanese; path = Japanese.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		F5839A7102CB161A01A80002 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		F588454A039D0E0901FEBAF7 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F588454C039D0ED801FEBAF7 /* Japanese */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = Japanese; path = Japanese.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F58CD2320392684901A80002 /* Sound.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = Sound.tiff; path = /System/Library/PreferencePanes/Sound.prefPane/Contents/Resources/Sound.tiff; sourceTree = "<absolute>"; };
+		F5AB439F03025F1A01DEF3BB /* swicon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = swicon.icns; sourceTree = "<group>"; };
+		F5D7F0480394BF9201A80002 /* Help */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = Help; sourceTree = "<group>"; };
+		F5D7F04B0394BFA901A80002 /* index.html */ = {isa = PBXFileReference; fileEncoding = 3; lastKnownFileType = text.html; name = index.html; path = Help/index.html; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29B9732DFDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1058C7A3FEA54F0111CA2CBB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF05E9D0FA76A6D0049A8B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF05E9E0FA76A6D0049A8B5 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F50658E302C3705601A80002 /* SimpleWget.h */,
+				F50658E202C3705601A80002 /* SimpleWget.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17587328FF379C6511CA2CBB /* SimpleWget.app */,
+				ECF05EA40FA76A6D0049A8B5 /* SimpleWget.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* wgetWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				F559366A02C3735101A80002 /* wget */,
+				F5D7F0480394BF9201A80002 /* Help */,
+				F5D7F04B0394BFA901A80002 /* index.html */,
+				ECF05EA30FA76A6D0049A8B5 /* Info-SimpleWget__Upgraded_.plist */,
+			);
+			name = wgetWrapper;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F50658E602C370C501A80002 /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				F5884549039D0E0901FEBAF7 /* Localizable.strings */,
+				F53E7BCE02C4911D01A80002 /* Credits.html */,
+				F5839A7102CB161A01A80002 /* Credits.rtf */,
+				F5AB439F03025F1A01DEF3BB /* swicon.icns */,
+				F58CD2320392684901A80002 /* Sound.tiff */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		29B97327FDCFA39411CA2CEA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50658E502C3705601A80002 /* SimpleWget.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF05E8F0FA76A6D0049A8B5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF05E900FA76A6D0049A8B5 /* SimpleWget.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		ECF05E8E0FA76A6D0049A8B5 /* SimpleWget (Upgraded) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECF05E9F0FA76A6D0049A8B5 /* Build configuration list for PBXNativeTarget "SimpleWget (Upgraded)" */;
+			buildPhases = (
+				ECF05E8F0FA76A6D0049A8B5 /* Headers */,
+				ECF05E910FA76A6D0049A8B5 /* Resources */,
+				ECF05E9A0FA76A6D0049A8B5 /* Sources */,
+				ECF05E9D0FA76A6D0049A8B5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SimpleWget (Upgraded)";
+			productName = wgetWrapper;
+			productReference = ECF05EA40FA76A6D0049A8B5 /* SimpleWget.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 5F3323EA085C185300F3B2B4 /* Build configuration list for PBXProject "SimpleWget" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* wgetWrapper */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECF05E8E0FA76A6D0049A8B5 /* SimpleWget (Upgraded) */,
+				29B97326FDCFA39411CA2CEA /* SimpleWget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29B97328FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				080E96DCFE201CFB7F000001 /* MainMenu.nib in Resources */,
+				089C165EFE840E0CC02AAC07 /* InfoPlist.strings in Resources */,
+				F5AB43A003025F1A01DEF3BB /* swicon.icns in Resources */,
+				F58CD23403926F6B01A80002 /* Sound.tiff in Resources */,
+				F5D7F04A0394BF9201A80002 /* Help in Resources */,
+				F5D7F04C0394BFA901A80002 /* index.html in Resources */,
+				F588454B039D0E0901FEBAF7 /* Localizable.strings in Resources */,
+				F5EF813303AB0B0501A80002 /* wget in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF05E910FA76A6D0049A8B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF05E920FA76A6D0049A8B5 /* MainMenu.nib in Resources */,
+				ECF05E930FA76A6D0049A8B5 /* InfoPlist.strings in Resources */,
+				ECF05E940FA76A6D0049A8B5 /* swicon.icns in Resources */,
+				ECF05E950FA76A6D0049A8B5 /* Sound.tiff in Resources */,
+				ECF05E960FA76A6D0049A8B5 /* Help in Resources */,
+				ECF05E970FA76A6D0049A8B5 /* index.html in Resources */,
+				ECF05E980FA76A6D0049A8B5 /* Localizable.strings in Resources */,
+				ECF05E990FA76A6D0049A8B5 /* wget in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29B9732BFDCFA39411CA2CEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50658E402C3705601A80002 /* SimpleWget.m in Sources */,
+				F50658E702C370C501A80002 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF05E9A0FA76A6D0049A8B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF05E9B0FA76A6D0049A8B5 /* SimpleWget.m in Sources */,
+				ECF05E9C0FA76A6D0049A8B5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+				F563CBE0039D056301FD05B7 /* Japanese */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		F5884549039D0E0901FEBAF7 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F588454A039D0E0901FEBAF7 /* English */,
+				F588454C039D0ED801FEBAF7 /* Japanese */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F3323E7085C185300F3B2B4 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = SimpleWget;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		5F3323E8085C185300F3B2B4 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUGGING_SYMBOLS = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = SimpleWget;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		5F3323E9085C185300F3B2B4 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_OPTIMIZATION_LEVEL = 3;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = SimpleWget;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		5F3323EB085C185300F3B2B4 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+			};
+			name = Development;
+		};
+		5F3323EC085C185300F3B2B4 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+			};
+			name = Deployment;
+		};
+		5F3323ED085C185300F3B2B4 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+			};
+			name = Default;
+		};
+		ECF05EA00FA76A6D0049A8B5 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-SimpleWget__Upgraded_.plist";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = SimpleWget;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		ECF05EA10FA76A6D0049A8B5 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-SimpleWget__Upgraded_.plist";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = SimpleWget;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		ECF05EA20FA76A6D0049A8B5 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-SimpleWget__Upgraded_.plist";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = SimpleWget;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F3323E6085C185300F3B2B4 /* Build configuration list for PBXApplicationTarget "SimpleWget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F3323E7085C185300F3B2B4 /* Development */,
+				5F3323E8085C185300F3B2B4 /* Deployment */,
+				5F3323E9085C185300F3B2B4 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		5F3323EA085C185300F3B2B4 /* Build configuration list for PBXProject "SimpleWget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F3323EB085C185300F3B2B4 /* Development */,
+				5F3323EC085C185300F3B2B4 /* Deployment */,
+				5F3323ED085C185300F3B2B4 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		ECF05E9F0FA76A6D0049A8B5 /* Build configuration list for PBXNativeTarget "SimpleWget (Upgraded)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF05EA00FA76A6D0049A8B5 /* Development */,
+				ECF05EA10FA76A6D0049A8B5 /* Deployment */,
+				ECF05EA20FA76A6D0049A8B5 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
